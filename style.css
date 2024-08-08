@@ -57,6 +57,9 @@ section{
      
 
 }
+.menubar{
+     display:none;
+}
 .navbar h1{
      font-size: 2.5rem;
      font-weight: 800;
@@ -119,6 +122,9 @@ color: white;
      display: flex;
 }
 .tutorial-rsc{
+     display: flex;
+     align-items: center;
+     justify-items: space-between;
      margin-top: -12rem;
      margin-left: -5rem;
     
@@ -126,13 +132,13 @@ color: white;
 .workout-rsc{
      margin-top: -27rem;
      margin-left: 9rem;
+     
 }
 .tutorial-rsc,.workout-rsc{
-     border: 2px solid red;
      height: fit-content;
      padding: 1rem 2rem;
      border-radius: 20px;
-     background-color: transparent;
+     background-color: rgba(255, 255, 255, .25)
      
 
 }
@@ -143,6 +149,19 @@ color: white;
 }
 .tutorial-rsc span,.workout-rsc span{
      color: rgba(255, 255, 255, 0.7);
+}
+.tutorial-rsc{
+     padding: 1rem 1.2rem;
+}
+.play-btn{
+     height: 2.5rem;
+     width: 2.5rem;
+     background-color: rgb(230, 83, 60);
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-right: .5rem;
 }
 /* banner style ends here */
 
@@ -209,6 +228,8 @@ table{
      border: 2px solid gray;
      border-collapse: collapse; 
      margin-top: 1.5rem;
+     margin-left: 0;
+     margin-right: 0;
      
 }
 
@@ -255,6 +276,43 @@ select> option{
      margin-bottom:1.5rem;
 }
 /* BMI Calculator style ends here */
+/* success style starts here */
+
+.success{
+     margin: 0 auto;
+}
+.success-top{
+     width:41rem;
+     margin: 0 auto;
+}
+.success-proves{
+     background-color: rgb(34, 34, 34);     
+ display: flex;
+ flex-direction: column;
+ align-items: center; 
+ margin: 1rem auto;
+ padding:2rem;
+}
+
+.success-image-container{
+     display:grid;
+     grid-template-columns: repeat(2,1fr);
+     gap: 10px;
+     
+    
+}
+.success-image-container img{
+     width: 30rem;
+     height: 20rem;
+     border: 1px dashed rgb(230, 83, 60);
+     border-radius: 35px;
+     transform: all 1s;
+  
+}
+.success-image-container img :hover{
+     transform: scale(1.1);
+}
+/* success style ends here */
 
 /* Team style starts here */
 .team{
@@ -270,13 +328,17 @@ select> option{
      display: grid;
      grid-template-columns: repeat(3,1fr);
      gap: 1rem;
+
 }
 
 .team-img img{
      width: 100%;
      height: 100%;
      border-radius: 35px; 
+     opacity:1;
+     
 }
+
 
 .name {
 
@@ -286,7 +348,7 @@ select> option{
           flex-direction: column;
           justify-content: flex-start;
           align-items: flex-start;  
-          background-blend-mode: overlay;
+          /* background-blend-mode: overlay; */
               
 
      }
@@ -374,6 +436,9 @@ select> option{
     .nav-links{
      display: none;
     }
+    .menubar{
+     display: contents;
+    }
      .banner{
           flex-direction: column;
      }
@@ -426,7 +491,23 @@ select> option{
           width: 100%;
 
      }
-     .team,.team-info,.team-img{
+     .calculator-main{
+          align-items: center;
+          justify-content: center;
+          justify-items: center;
+     }
+     .calculator-main>button{
+          margin:2rem auto;
+
+     }
+     .success-image-container{
+          grid-template-columns:repeat(1,1fr);
+     }
+     .success-image-container img{
+          width: 100%;
+          height:15rem;
+     }
+     .team,.team-info,.team-img,.success-top{
           width: 100%;
           
      }
