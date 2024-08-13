@@ -29,7 +29,9 @@ body{
     border-radius:30px;
     font-size: 1.2rem;
     font-weight: bold;
+    
 }
+
 .secondary-btn{
      width:15.5rem;
      padding: 1rem 2rem;
@@ -266,10 +268,13 @@ border-radius: 10px;
 }
 select{
      color: rgba(255, 255, 255, 0.6);
+    
 }
 select> option{
+     
+     color:black;
      background-color:  rgba(255, 255, 255, 0.1);
-     color: rgba(255, 255, 255, 0.6);
+     
 }
 
 .calculator-main> .primary-btn{
@@ -299,6 +304,7 @@ select> option{
      grid-template-columns: repeat(2,1fr);
      gap: 10px;
      
+     
     
 }
 .success-image-container img{
@@ -306,12 +312,11 @@ select> option{
      height: 20rem;
      border: 1px dashed rgb(230, 83, 60);
      border-radius: 35px;
-     transform: all 1s;
+    
+     
   
 }
-.success-image-container img :hover{
-     transform: scale(1.1);
-}
+
 /* success style ends here */
 
 /* Team style starts here */
@@ -433,11 +438,16 @@ select> option{
     section{
      margin-top:1rem;
     }
+    .navbar{
+     display: flex;
+    }
     .nav-links{
      display: none;
     }
     .menubar{
-     display: contents;
+     color: white;
+     display: block;
+     margin-right: 1rem;
     }
      .banner{
           flex-direction: column;
@@ -462,7 +472,7 @@ select> option{
      margin-left: 2rem;
 }
 .tutorial-rsc,.workout-rsc{
-     height: fit-content;
+     /* height: fit-content; */
      padding: 1rem;    
 }
 .tutorial-rsc h6,.workout-rsc h6{
