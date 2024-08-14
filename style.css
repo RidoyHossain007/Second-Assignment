@@ -191,6 +191,7 @@ color: white;
           background-color: rgb(34, 34, 34);
           align-items: center;
           justify-content: space-between;
+          box-shadow: white 2px 2px 20px;
 
      }
      .run-text{
@@ -294,9 +295,11 @@ select> option{
      background-color: rgb(34, 34, 34);     
  display: flex;
  flex-direction: column;
+ border-radius: 35px;
  align-items: center; 
  margin: 1rem auto;
  padding:2rem;
+ box-shadow: white 2px 2px 15px;
 }
 
 .success-image-container{
